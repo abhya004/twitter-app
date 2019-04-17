@@ -14,7 +14,7 @@
   <body>
 
       <nav class="navbar navbar-light bg-faded">
-  <a class="navbar-brand" href="http://completewebdevelopercourse.com/content/12-twitter/">Twitter</a>
+  <a class="navbar-brand" href="http://localhost/twitter/">Twitter</a>
   <ul class="nav navbar-nav">
     <li class="nav-item">
       <a class="nav-link" href="?page=timeline">Your timeline</a>
@@ -27,6 +27,15 @@
     </li>
   </ul>
   <div class="form-inline pull-xs-right">
+
+      <?php if (isset($_SESSION['id'])) { ?>
+
+        <a class="btn btn-success-outline" href="?function=logout">Logout</a>
+
+      <?php } else { ?>
+
     <button class="btn btn-success-outline" data-toggle="modal" data-target="#myModal">Login/Signup</button>
+
+      <?php } ?>
   </div>
 </nav>

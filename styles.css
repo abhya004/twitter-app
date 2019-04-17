@@ -1,16 +1,13 @@
-#toggleLogin{
+#toggleLogin {
 
-padding-right: 15px;
+    padding-right: 15px;
 
-  }
-
-#loginAlert{
-  display: none !important;
-  overflow: hidden;
-  visibility: hidden !important;
 }
-#check{
-  display: none;
+
+#loginAlert {
+
+    display:none;
+
 }
 
   /* Sticky footer styles

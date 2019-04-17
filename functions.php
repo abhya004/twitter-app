@@ -8,10 +8,11 @@
       exit();
     }
 
+        if (isset($_GET['function']) == "logout") {
 
-// if ($_GET['function'] == "logout") {
-//
-//   session_unset();
-// }
+            session_unset();
+
+        }
+
 
  ?>
