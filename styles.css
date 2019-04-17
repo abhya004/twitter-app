@@ -9,7 +9,21 @@
     display:none;
 
 }
+.mainContainer{
+  padding: 20px;
+}
 
+.tweet{
+
+   border: 1px solid grey;
+   border-radius: 5px;
+   padding: 5px;
+   margin: 5px;
+}
+.time{
+
+  color: lightgrey;
+}
   /* Sticky footer styles
 -------------------------------------------------- */
 html {
