@@ -9,12 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
-      <link rel="stylesheet" href="http://completewebdevelopercourse.com/content/12-twitter/styles.css">
+      <link rel="stylesheet" href="styles.css">
   </head>
   <body>
 
       <nav class="navbar navbar-light bg-faded">
-  <a class="navbar-brand" href="http://localhost/twitter/">Twitter</a>
+  <a class="navbar-brand" href="http://localhost/12-twitter/">Twitter</a>
   <ul class="nav navbar-nav">
     <li class="nav-item">
       <a class="nav-link" href="?page=timeline">Your timeline</a>

@@ -77,7 +77,7 @@
             success: function(result) {
                 if (result == "1") {
 
-                    window.location.assign("http://localhost/twitter/");
+                    window.location.assign("http://localhost/12-twitter/");
 
                 } else {
 
@@ -90,7 +90,58 @@
 
     })
 
+    $(".toggleFollow").click(function() {
+
+        var id = $(this).attr("data-userId");
+
+        $.ajax({
+            type: "POST",
+            url: "actions.php?action=toggleFollow",
+            data: "userId=" + id,
+            success: function(result) {
+
+                if (result == "1") {
+
+                    $("a[data-userId='" + id + "']").html("Follow");
+
+                } else if (result == "2") {
+
+                    $("a[data-userId='" + id + "']").html("Unfollow");
+
+                }
+            }
+
+        })
+
+    })
+
+    $("#postTweetButton").click(function() {
+
+        $.ajax({
+            type: "POST",
+            url: "actions.php?action=postTweet",
+            data: "tweetContent=" + $("#tweetContent").val(),
+            success: function(result) {
+
+                if (result == "1") {
+
+                    $("#tweetSuccess").show();
+                    $("#tweetFail").hide();
+
+                } else if (result != "") {
+
+                    $("#tweetFail").html(result).show();
+                    $("#tweetSuccess").hide();
+
+                }
+            }
+
+        })
+
+    })
+
 </script>
 
-</body>
+
+  </body>
 </html>
